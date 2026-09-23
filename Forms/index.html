@@ -7,19 +7,21 @@
 </head>
 <body>
     <h1>HTML Forms</h1>
-    <form>
-        <label for="username">Enter username</label>
-        <input name="username" id="username" minlength="3" maxlength="7" type="text" placeholder="Username enter"> <br><br>
+    
+    <form >
+        <input type="range" min="0" max="100" value="70" step="10">
+        <label for="username" >Enter username</label>
+        <input name="username" autofocus value="Adfar" id="username" minlength="3" type="text" placeholder="Username enter"> <br><br>
         <label for="email">Enter email</label>
-        <input id="email" name="email" type="email" placeholder="email enter" required> <br> <br>
+        <input id="email" name="email" readonly type="email" placeholder="email enter" required> <br> <br>
         <label for="pass">Enter Password</label>
         <input id="pass" name="pass" type="password" placeholder="password enter"> <br> <br>
         <label for="">Enter Gender <br></label>
-        <input type="radio" name="gender">Male
-        <input type="radio" name="gender">Female
-        <input type="radio" name="gender">Other <br>
+        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F" checked>Female
+        <input type="radio" name="gender" value="O">Other <br>
         <label for="">age:</label>
-        <input type="number" min="0" max="100"> <br>
+        <input type="number" step="2" min="0" max="100"> <br>
         <label for="">DOB</label>
         <input type="datetime-local">
         <input type="file" name="" id="">
