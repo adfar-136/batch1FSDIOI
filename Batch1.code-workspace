@@ -3,10 +3,6 @@
 		{
 			"name": "Batch1",
 			"path": "."
-		},
-		{
-			"name": "Adfar_HTML_CSS_Demos",
-			"path": "../Downloads/Adfar_HTML_CSS_Demos"
 		}
 	],
 	"settings": {
