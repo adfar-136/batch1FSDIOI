@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn-outline theme-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item ">
+      <a class="page-link" href="#" aria-current="page">2</a>
+    </li>
+    <li class="page-item active">
+        <a class="page-link" href="#">3</a></li>
+    <li class="page-item ">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+<div class="accordion">
+  <details class="accordion-item" name="accordionExample" open>
+    <summary class="accordion-header">
+      Accordion Item #1
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>This is the first item’s accordion body.</strong> It is shown by default because the <code>open</code> attribute is present. The native <code>&lt;details&gt;</code> element handles all the show/hide logic without any JavaScript. You can put any HTML content within the <code>.accordion-body</code>.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Accordion Item #2
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>This is the second item’s accordion body.</strong> The <code>name</code> attribute groups this with other accordion items. When you open this item, any other open item in the same group will close automatically.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Accordion Item #3
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>This is the third item’s accordion body.</strong> This exclusive accordion behavior is built into the browser—no Bootstrap JavaScript required. Just use matching <code>name</code> attributes on your <code>&lt;details&gt;</code> elements.
+    </div>
+  </details>
+</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a class="breadcrumb-link" href="#">Home</a>
+    </li>
+    <li class="breadcrumb-divider"></li>
+    <li class="breadcrumb-item">
+      <a class="breadcrumb-link" href="#">Library</a>
+    </li>
+    <li class="breadcrumb-divider"></li>
+    <li class="breadcrumb-item" aria-current="page">
+      <a class="breadcrumb-link active" href="#">Data</a>
+    </li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a class="breadcrumb-link" href="#">Home</a>
+    </li>
+    <li class="breadcrumb-divider"></li>
+    <li class="breadcrumb-item">
+      <a class="breadcrumb-link" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentcolor"><circle cx="2" cy="8" r="2"/><circle cx="8" cy="8" r="2"/><circle cx="14" cy="8" r="2"/></svg>
+      </a>
+    </li>
+    <li class="breadcrumb-divider"></li>
+    <li class="breadcrumb-item">
+      <a class="breadcrumb-link" href="#">Documents</a>
+    </li>
+    <li class="breadcrumb-divider"></li>
+    <li class="breadcrumb-item" aria-current="page">
+      <a class="breadcrumb-link active" href="#">2026</a>
+    </li>
+  </ol>
+</nav>
+
+<section class="card" style="max-width: 320px">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</section>
+<span class="avatar">
+  <img class="avatar-img" src="https://github.com/mdo.png" alt="mdo">
+</span>
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn-solid theme-primary flex-grow-0" id="liveAlertBtn">Show live alert</button>
+
+<div id="carouselStacked" class="carousel slide">
+  <div class="d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">Top controls</h5>
+    <div>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<div class="spinner-border" role="status">
+  <span class="visually-hidden">Loading…</span>
+</div>
+
+<span class="badge theme-primary">
+  <span class="spinner-border" aria-hidden="true"></span>
+  <span role="status">Loading</span>
+</span>
+
+<button class="btn-subtle theme-primary" type="button" disabled>
+  <span class="spinner-border" aria-hidden="true"></span>
+  <span role="status">Loading…</span>
+</button>
+
+
+<!-- <form class="container">
+  <h2>Register User</h2>
+  <div class="mb-3">
+    <label class="form-label" for="name">Full name</label>
+    <input class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="email">Email</label>
+    <input type="email" class="form-control" id="email" required>
+  </div>
+  <button type="submit" class="btn-solid theme-primary">Register</button>
+</form>
+<div class="btn-toolbar" role="toolbar">
+  <div class="btn-group me-2" role="group">
+    <button class="btn-solid theme-danger" type="button">B</button>
+    <button class="btn-solid theme-danger" type="button">I</button>
+    <button class="btn-outline theme-danger" type="button">U</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Actions">
+    <button class="btn btn-outline theme-primary">Undo</button>
+    <button class="btn btn-outline theme-primary">Redo</button>
+  </div>
+</div>
+
+<form class="container">
+  <div class="row g-0">
+    <div class="col-3">
+      <select class="form-select" aria-label="Department">
+        <option>All</option><option>Books</option>
+      </select>
+    </div>
+    <div class="col-7">
+      <input class="form-control" type="search"
+             placeholder="Search products">
+    </div>
+    <div class="col-2">
+      <button class="btn-solid theme-warning w-100">Search</button>
+    </div>
+  </div>
+</form>
+
+<form class="container">
+  <h2>Create your account</h2>
+  <div class="row g-3">
+    <div class="col-12 col-md-6">
+      <label class="form-label" for="first">First name</label>
+      <input class="form-control" id="first" required>
+    </div>
+    <div class="col-12 col-md-6">
+      <label class="form-label" for="last">Last name</label>
+      <input class="form-control" id="last" required>
+    </div>
+   
+  </div>
+</form>
+
+<div class="col-12">
+  <label class="form-label" for="email2">Email address</label>
+  <input class="form-control" type="email" id="email2" required>
+</div>
+<div class="col-12">
+  <label class="form-label" for="pwd2">Password</label>
+  <input class="form-control" type="password" id="pwd2" required>
+</div>
+<div class="col-12">
+  <div class="form-check">
+     <input type="checkbox" id="checkLabel" class="check theme-danger" checked/>
+  <label for="checkLabel">i agree</label>
+  </div>
+  <button class="btn-solid theme-primary mt-3" type="submit">Sign up</button>
+</div>
+
+<form class="container-sm">
+  <h2>Sign in</h2>
+  <div class="mb-3">
+    <label class="form-label" for="signin-email">Email</label>
+    <input type="email" class="form-control" id="signin-email" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="signin-pwd">Password</label>
+    <input type="password" class="form-control" id="signin-pwd" required>
+  </div>
+  <button class="btn-solid theme-warning w-100" type="submit">Continue</button>
+  <p class="mt-3">New customer? Create your account.</p>
+</form> -->
+
+
+</body>
+</html>
